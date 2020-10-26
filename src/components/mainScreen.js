@@ -17,6 +17,8 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 import LinearGradient from 'react-native-linear-gradient'
+import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
+
 
 
 const vh = Dimensions.get("window").height
@@ -41,8 +43,8 @@ const MainScreen = () => {
             <View style={{ flex: 1, justifyContent: 'space-around', paddingHorizontal: 50, shadowColor: 'black', borderBottomRightRadius: 120, opacity: 0.8 }}>
               <Text style={{ color: 'white', alignSelf: 'flex-start', fontSize: 70 }}>Givees</Text>
               <View style={{ flexDirection: 'row', justifyContent: 'flex-start' }}>
-                <Text style={{ color: 'white', marginHorizontal: 10 }}>Icon</Text>
-                <Text style={{ color: 'white', fontSize: 20 }}>Wallet</Text>
+              <MaterialIcons style={{ fontSize:25,color:'white',marginHorizontal: 10 }} name="work"  />
+                <Text style={{ color: 'white', fontSize: 25 }}>Wallet</Text>
               </View>
             </View>
           </LinearGradient>
@@ -52,9 +54,10 @@ const MainScreen = () => {
             start={{ x: 0, y: 0 }}
             end={{ x: 2, y: 2 }}
           >
-            <View style={{ paddingHorizontal: 50, paddingVertical: 10, flexDirection: 'row', flex: 1, shadowColor: 'black', borderBottomRightRadius: 70 }}>
-              <Text style={{ color: 'white', marginHorizontal: 10 }}>Icon</Text>
-              <Text style={{ color: 'white', fontSize: 20 }}>Profile</Text>
+            <View style={{ paddingHorizontal: 50, paddingVertical: 25, flexDirection: 'row', flex: 1, shadowColor: 'black', borderBottomRightRadius: 70 }}>
+            <MaterialIcons style={{ fontSize:25,color:'white',marginHorizontal: 10 }} name="person"  />
+
+              <Text style={{ color: 'white', fontSize: 25 }}>Profile</Text>
             </View>
 
           </LinearGradient>
@@ -64,9 +67,9 @@ const MainScreen = () => {
             start={{ x: 0, y: 0 }}
             end={{ x: 2, y: 2 }}
           >
-            <View style={{ paddingHorizontal: 50, paddingVertical: 10, flexDirection: 'row', flex: 1, shadowColor: 'black', borderBottomRightRadius: 70 }}>
-              <Text style={{ color: 'white', marginHorizontal: 10 }}>Icon</Text>
-              <Text style={{ color: 'white', fontSize: 20 }}>Friend List</Text>
+            <View style={{ paddingHorizontal: 50, paddingVertical: 25, flexDirection: 'row', flex: 1, shadowColor: 'black', borderBottomRightRadius: 70 }}>
+            <MaterialIcons style={{ fontSize:25,color:'white',marginHorizontal: 10 }} name="people"  />
+              <Text style={{ color: 'white', fontSize: 25 }}>Friend List</Text>
             </View>
           </LinearGradient>
           <LinearGradient
@@ -75,21 +78,15 @@ const MainScreen = () => {
             start={{ x: 0, y: 0 }}
             end={{ x: 2, y: 2 }}
           >
-            <View style={{ paddingHorizontal: 50, paddingVertical: 10, flexDirection: 'row', flex: 1, shadowColor: 'black', borderBottomRightRadius: 70 }}>
-              <Text style={{ color: 'white', marginHorizontal: 10 }}>Icon</Text>
-              <Text style={{ color: 'white', fontSize: 20 }}>Payment Info</Text>
+            <View style={{ paddingHorizontal: 50, paddingVertical: 25, flexDirection: 'row', flex: 1, shadowColor: 'black', borderBottomRightRadius: 70 }}>
+            <MaterialIcons style={{ fontSize:25,color:'white',marginHorizontal: 10 }} name="bento"  />
+              <Text style={{ color: 'white', fontSize: 25 }}>Payment Info</Text>
             </View>
           </LinearGradient>
         </View>
       </LinearGradient >
 
-      <View style={{ flex: 0.2 }}></View>
-      <View style={{ flex: 0.1, padding: 5, justifyContent: 'space-between', backgroundColor: '#43c4a4', flexDirection: 'row', }}>
-        <Text style={{ color: 'white', fontSize: 15 }}>Home </Text>
-        <Text style={{ color: 'white', fontSize: 15 }}>About </Text>
-        <Text style={{ color: 'white', fontSize: 15 }}>Setting </Text>
-      </View>
-
+      <View style={{ flex: 0.1 }}></View>
     </View>
   );
 };
